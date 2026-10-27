@@ -9,13 +9,13 @@ This project implements three common methods for calculating Value at Risk (VaR)
 **VaR Formula:**
 
 $$
-\operatorname{VaR}_{\alpha}=-Q_{1-\alpha}(R)
+\mathrm{VaR}_{\alpha}=-Q_{1-\alpha}(R)
 $$
 
 **Expected Shortfall (ES):**
 
 $$
-\operatorname{ES}_{\alpha}
+\mathrm{ES}_{\alpha}
 =-E[R\mid R\leq Q_{1-\alpha}(R)]
 $$
 
@@ -33,7 +33,7 @@ ES measures the average loss in the lower tail of the return distribution.
 **For a Single Asset:**
 
 $$
-\operatorname{VaR}_{\alpha}=z_{\alpha}\sigma-\mu
+\mathrm{VaR}_{\alpha}=z_{\alpha}\sigma-\mu
 $$
 
 **For a Portfolio:**
@@ -47,13 +47,13 @@ $$
 $$
 
 $$
-\operatorname{VaR}_{\alpha,p}=z_{\alpha}\sigma_p-\mu_p
+\mathrm{VaR}_{\alpha,p}=z_{\alpha}\sigma_p-\mu_p
 $$
 
 **Parametric Expected Shortfall:**
 
 $$
-\operatorname{ES}_{\alpha,p}
+\mathrm{ES}_{\alpha,p}
 =-\mu_p+\frac{\sigma_p\phi(z_{\alpha})}{1-\alpha}
 $$
 
@@ -87,11 +87,11 @@ Where $L$ is the lower-triangular Cholesky factor satisfying $\Sigma=LL^T$.
 **VaR and ES Formulas:**
 
 $$
-\operatorname{VaR}_{\alpha}^{MC}=-Q_{1-\alpha}(R_{\text{sim}})
+\mathrm{VaR}_{\alpha}^{MC}=-Q_{1-\alpha}(R_{\text{sim}})
 $$
 
 $$
-\operatorname{ES}_{\alpha}^{MC}
+\mathrm{ES}_{\alpha}^{MC}
 =-E[R_{\text{sim}}\mid R_{\text{sim}}\leq Q_{1-\alpha}(R_{\text{sim}})]
 $$
 
